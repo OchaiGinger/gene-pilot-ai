@@ -123,4 +123,37 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Added smooth scrolling and improved text rendering for professional appearance */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Added custom utilities for GenePilot.AI specific styling */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, oklch(0.98 0 0) 0%, oklch(0.96 0.02 200) 50%, oklch(0.98 0 0) 100%);
+  }
 }
