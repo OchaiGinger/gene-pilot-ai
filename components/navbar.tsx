@@ -24,10 +24,10 @@ export function Navbar() {
             About Us
           </Link>
           <Link href="/services" className="text-foreground hover:text-primary transition-colors">
-            Services & Contact
+            Contact
           </Link>
           <Link href="/team" className="text-foreground hover:text-primary transition-colors">
-            Team & Testimonials
+            Team
           </Link>
         </div>
 
