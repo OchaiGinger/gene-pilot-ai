@@ -6,12 +6,15 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import "./globals.css"
 
-export const metadata: Metadata = {
-  title: "GenePilot.AI - Personalized Genomics, Powered by AI",
-  description:
-    "From lab to life — transforming healthcare, one genome at a time. GenePilot.AI harnesses AI, genomics, and predictive modeling for precision medicine.",
-  generator: "v0.app",
-}
+// For app/layout.tsx
+export const metadata = Metadata{
+  title: "My App",
+  description: "Best app ever",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 
 export default function RootLayout({
   children,
