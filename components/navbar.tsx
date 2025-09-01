@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function Navbar() {
@@ -9,9 +10,13 @@ export function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">GP</span>
-            </div>
+            <Image
+              src="/gene-pilot.png"
+              alt="GenePilot Logo"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
             <span className="font-bold text-xl text-foreground">GenePilot.AI</span>
           </div>
         </Link>
