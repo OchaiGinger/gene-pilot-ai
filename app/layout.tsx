@@ -7,14 +7,13 @@ import { Footer } from "@/components/footer"
 import "./globals.css"
 
 // For app/layout.tsx
-export const metadata = Metadata{
+export const metadata: Metadata = {
   title: "My App",
   description: "Best app ever",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.ico", // Make sure this is inside /public
   },
-};
-
+}
 
 export default function RootLayout({
   children,
@@ -23,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body
+        className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}
+      >
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
