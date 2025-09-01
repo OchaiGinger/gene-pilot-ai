@@ -8,8 +8,8 @@ import "./globals.css"
 
 // For app/layout.tsx
 export const metadata: Metadata = {
-  title: "My App",
-  description: "Best app ever",
+  title: "Gene-Pilot-AI",
+  description: "GenePilot.AI – Personalized Genomics",
   icons: {
     icon: "/favicon.ico", // Make sure this is inside /public
   },
